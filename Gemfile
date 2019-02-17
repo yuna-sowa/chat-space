@@ -51,3 +51,23 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# いずれの環境でも必要
+gem 'devise'
+
+# 開発環境にのみ必要
+group :development, :test do
+     gem 'rspec'
+end
+
+# 本番環境にのみ必要
+group :production do
+     gem 'unicorn'
+end
+
+# Hamlの導入
+gem 'haml-rails'
+gem 'erb2haml'
+
+# font-awesomeの導入
+gem 'font-awesome-rails'
