@@ -1,0 +1,45 @@
+%div.notification
+  チャットグループが作成されました。
+%div.contents
+  %div.header
+    %div.header__left
+      name
+      %span.fas.fa-cog
+      %span.fa.fa-pencil-square-o
+    / 後でグループが選択されていなければ表示させないようにする
+    %div.header__right
+      %div.header__right__group
+        sampleグループ
+      %div.header__right__button
+        %a{href: '', class: 'edit__button'}
+          Edit
+      %div.header__right__member
+        Members：seo neko
+    / ここまで
+  = render partial: "sidebar"
+
+  / 以下は初期表示には必要ないため、後でグループ表示ファイルに移行する
+  %div.main
+    %div.main__commentList
+      %div.main__commentList__name
+        name1
+      %div.main__commentList__postTime
+        2019/2/7 06:27:14
+      %div.main__commentList__comment
+        command Enterで送信したい感ある
+      %div.main__commentList__name
+        name2
+      %div.main__commentList__postTime
+        2019/2/7 08:27:14
+      %div.main__commentList__comment
+        お腹すいた
+  %div.form
+    %div.form__text
+      %input{ type: 'text', class: 'comment__form', placeholder: "type a message" }
+    %div.form__mask
+      %label.form__mask__icon{for: "message_image"}
+        %i.far.fa-image
+        = file_field :message, :image, :class => 'hidden'
+    %div.form__button
+      %a{ href: '', class: 'send__button' }
+        Send

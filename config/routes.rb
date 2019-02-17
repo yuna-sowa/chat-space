@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'messages#index'                        #ルートパスの指定
+  get  'messages'     => 'messages#index'      #メッセージ画面
 end
