@@ -56,12 +56,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 
 # 開発環境にのみ必要
-group :development do
-     gem 'rspec'
-end
-
-# テスト環境にのみ必要
-group :test do
+group :development, :test do
      gem 'rspec'
 end
 
