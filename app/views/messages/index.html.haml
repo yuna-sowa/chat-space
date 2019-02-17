@@ -37,7 +37,7 @@
       %input{ type: 'text', class: 'comment__form', placeholder: "type a message" }
     .form__mask
       %label.form__mask__icon{for: "message_image"}
-        %i.far.fa-image
+        %i.fa.fa-image
         = file_field :message, :image, class: 'hidden'
     .form__button
       = link_to 'Send', '', class: 'send__button'
