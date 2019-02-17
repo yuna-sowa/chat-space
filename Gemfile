@@ -69,5 +69,5 @@ end
 gem 'haml-rails'
 gem 'erb2haml'
 
-# 歯車のアイコン
+# font-awesomeの導入
 gem 'font-awesome-rails'
