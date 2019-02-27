@@ -5,16 +5,17 @@
   padding: 0 20px;
   background-color: $sideNavyColor;
   word-wrap: break-word;
-  &__groupList {
-    color: $fontWhite;
-    &__group {
-      padding-top: 20px;
-      padding-bottom: 5px;
-      font-size: 15px;
-    }
-    &__newComment {
-      padding-bottom: 20px;
-      font-size: 11px;
-    }
+}
+
+.groupList {
+  color: $fontWhite;
+  &__group {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 15px;
+  }
+  &__newComment {
+    padding-bottom: 20px;
+    font-size: 11px;
   }
 }
