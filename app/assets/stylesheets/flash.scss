@@ -1,0 +1,13 @@
+.notification {
+  line-height: 25px;
+  width: 100vw;
+  color: $fontWhite;
+  text-align: center;
+  .notice {
+    background-color: $notificationBlueColor;
+  }
+
+  .alert {
+    background-color: $notificationOrangeColor;
+  }
+}
