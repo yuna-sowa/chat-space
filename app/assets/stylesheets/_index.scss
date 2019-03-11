@@ -1,5 +1,10 @@
+.class {
+  float: left;
+}
 
 .contents {
+  float: right;
+  width: calc(100vw - 300px);
   height: 100vh;
 }
 
@@ -20,41 +25,26 @@
 
 .header {
   height: 100px;
-  width: 100vw;
+  width: calc(100vw - 380px);
   overflow: hidden;
-  &__left {
+  padding: 0 40px;
+  background-color: $headerWhiteColor;
+  &__group {
     float: left;
-    width: 260px;
-    line-height: 100px;
-    padding: 0 20px;
-    background-color: $headerNavyColor;
-    color: $fontWhite;
-    font-size: 16px;
-    font-weight: bold;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    color: $fontBlack1;
+    font-size: 20px;
   }
-  &__right {
-    float: left;
-    height: 100px;
-    width: calc(100vw - 380px);
-    padding: 0 40px;
-    background-color: $headerWhiteColor;
-    &__group {
-      float: left;
-      padding-top: 35px;
-      padding-bottom: 15px;
-      color: $fontBlack1;
-      font-size: 20px;
-    }
-    &__button {
-      float: right;
-      line-height: 40px;
-      margin-top: 28px;
-    }
-    &__member {
-      clear: both;
-      color: $fontGray;
-      font-size: 12px;
-    }
+  &__button {
+    float: right;
+    line-height: 40px;
+    margin-top: 28px;
+  }
+  &__member {
+    clear: both;
+    color: $fontGray;
+    font-size: 12px;
   }
 }
 
@@ -69,15 +59,16 @@
 }
 
 .main {
+  float: left;
   height: calc(100vh - 190px);
   width: calc(100vw - 380px);
-  margin-left: 300px;
+  //margin-left: 300px;
   padding: 0 40px;
   background-color: $mainGrayColor;
   &__commentList {
     padding-top: 46px;
     &__name {
-      float: left;
+      //float: left;
       padding-right: 10px;
       color: $fontBlack2;
       font-size: 16px;
