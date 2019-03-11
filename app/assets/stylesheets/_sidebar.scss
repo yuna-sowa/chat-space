@@ -1,21 +1,45 @@
 .sideBar {
   float: left;
+  width: 300px;
+  height: 100vh;
+}
+
+
+.header-sideBar {
+  width: 260px;
+  line-height: 100px;
+  padding: 0 20px;
+  background-color: $headerNavyColor;
+  color: $fontWhite;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.groupList {
   height: calc(100vh - 100px);
   width: 260px;
   padding: 0 20px;
   background-color: $sideNavyColor;
-  word-wrap: break-word;
 }
 
-.groupList {
-  color: $fontWhite;
-  &__group {
+.group {
+  word-wrap: break-word;
+  &__name {
     padding-top: 20px;
     padding-bottom: 5px;
     font-size: 15px;
+    color: $fontWhite;
+    text-decoration: none;
   }
+
   &__newComment {
     padding-bottom: 20px;
     font-size: 11px;
+    color: $fontWhite;
+    text-decoration: none;
   }
+}
+
+.group_link {
+  text-decoration:  none;
 }
