@@ -1,0 +1,32 @@
+.message
+  .contents
+    .header
+      .header__group
+        = @group.name
+      .header__button
+        = link_to 'Edit', 'groups/1/edit', class: 'edit__button'
+      .header__member
+        Members：
+    .main
+      .main__commentList
+        .main__commentList__name
+          name1
+        .main__commentList__postTime
+          2019/2/7 06:27:14
+        .main__commentList__comment
+          今から取り組み予定
+        .main__commentList__name
+          name2
+        .main__commentList__postTime
+          2019/2/7 08:27:14
+        .main__commentList__comment
+          テストコメント１
+    .form
+      .form__text
+        %input{ type: 'text', class: 'comment__form', placeholder: "メッセージを入力してください" }
+      .form__mask
+        %label.form__mask__icon{for: "message_image"}
+          %i.fa.fa-image
+          = file_field :message, :image, class: 'hidden'
+      .form__button
+        = link_to 'Send', '', class: 'send__button'
